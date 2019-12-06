@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="36dp"
     tools:context=".MainActivity">
 
     <Button
@@ -25,5 +26,22 @@
         app:layout_constraintTop_toBottomOf="@id/btn_schedule_job"
         app:layout_constraintLeft_toLeftOf="@id/btn_schedule_job"
         app:layout_constraintRight_toRightOf="@id/btn_schedule_job"/>
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input"
+        app:layout_constraintTop_toBottomOf="@id/btn_cancel_job"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/btn_enqueue_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enqueue Job"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/et_input"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
